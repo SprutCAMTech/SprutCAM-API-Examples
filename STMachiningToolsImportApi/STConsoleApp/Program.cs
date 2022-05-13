@@ -10,12 +10,12 @@ namespace STConsoleApp
 {
     class Program
     {
-        private static string myToolStorageFilePath = @"C:\ProgramData\Sprut Technology\SprutCAM\Version 16\Libraries\Tools\TestStorage.db";
+        private static string myToolStorageFilePath = @"TestStorage.db";
 
         private static IMTI_MachiningToolsImportLibrary LoadImporter() 
         {
             //Specify an existing path to the Bin64 folder according to your environment SprutCam
-            string assemblyPath = @"C:\Program Files\Sprut Technology\SprutCAM 16\Bin64\" + MTIMachiningToolsImportHelper.DllName;
+            string assemblyPath = @"c:\Program Files\SprutCAM Tech\SprutCAM X 16\Bin64\" + MTIMachiningToolsImportHelper.DllName;
             return File.Exists(assemblyPath) ? MTIMachiningToolsImportHelper.CreateImporter(assemblyPath) : null;
         }
 
@@ -208,6 +208,8 @@ namespace STConsoleApp
 
         static void Main(string[] args)
         {
+            if (args.Length>0)
+                myToolStorageFilePath = args[0];
             CreateNewMillTool();
             CreateNewTurnTool();
             CreateNewCustomAxialShapedTool();

@@ -6,9 +6,9 @@ SET version=
 
 if "%BUILDCONFIG%" == "" (SET BUILDCONFIG=DEBUG)
 
-call :RUNCLEAN "STMachiningToolsImportApi\STConsoleApp.csproj"
+call :RUNCLEAN "STMachiningToolsImportApi\STConsoleApp\STConsoleApp.csproj"
 
-call :RUNBUILD "STMachiningToolsImportApi\STConsoleApp.csproj"
+call :RUNBUILD "STMachiningToolsImportApi\STConsoleApp\STConsoleApp.csproj"
 
 echo Total result %EXIT_CODE%
 EXIT /B %EXIT_CODE%
