@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<SCCollection>
+	<SCInclude>$(SUPPLEMENT_FOLDER)\Operations\AbstractExtOp.xml</SCInclude>
+
+	<SCNameSpace ID="LibraryRegistrator">
+		<!-- Simple toolpath generator library -->
+		<SCType ID="SCOperationExampleLib" type="SCLibrary">
+			<FileName DefaultValue="SCOperationExample.dll"/>
+		</SCType>
+	</SCNameSpace>
+
+	<SCNameSpace ID="OperationRegistrator">
+		<SCType ID="RegTSimpleToolpathGeneratorOp" type="TRegisterOperationRecord" Enabled="True">
+			<TypeName DefaultValue="TSimpleToolpathGeneratorOp"/>
+		</SCType>
+	</SCNameSpace>
+
+    <SCType ID="TSimpleToolpathGeneratorOp" Caption="Simple toolpath generator" type="TSTMillOp" Enabled = "True">
+        <GUID DefaultValue="{BF4B03D4-16C6-40A8-A70C-2C0A0EA9239A}"/>
+        <ContainerID DefaultValue="{6028910C-B66B-4202-8502-E689B7053B67}"/>
+		<SolverID DefaultValue="{DACB16F5-127B-45EC-9207-65E1292D712B}"/>
+
+        <Name DefaultValue="Simple toolpath generator"/>
+        <Comment DefaultValue="Simple toolpath generator"/>
+        <Icon DefaultValue="$(SUPPLEMENT_FOLDER)\Operations\MillOperations\Images\mw5AxCoreOp_Ico.bmp"/>
+        <Image DefaultValue="$(SUPPLEMENT_FOLDER)\Operations\MillOperations\Images\mw5AxCoreOp.bmp"/>
+        <OperationGroup DefaultValue="Mill"/>
+        <MultiGroup>
+            <SCType ID="Group3DEntry" OrderInGroup="100" type="TLinkToParentMultiGroup"/>
+        </MultiGroup>
+		<SCType ID="AxesBrakeUsingMode" Caption="Axes brakes using mode" type="Enumerated" DefaultValue="DoNotUse">
+			<SCType ID="DoNotUse" Caption="Do not use brakes" type="None"/>
+			<SCType ID="Always" Caption="Use brakes" type="None"/>
+		</SCType>
+		<SCType ID="ToolpathParams" Caption="Toolpath pattern" type="ComplexType" Compact="True">
+			<SCType ID="Pattern" Caption="Pattern" type="Enumerated" DefaultValue="Rect">
+				<SCType ID="Rect" Caption="Rectangle" type="None"/>
+				<SCType ID="Circle" Caption="Circle" type="None"/>
+			</SCType>
+			<SCType ID="RectParams" Caption="Rectangle" type="ComplexType" Transparent="True">
+				<SCType ID="StartPoint" Caption="Start point" type="ComplexType" Visible="[Pattern]=[Pattern.Rect]">
+					<SCType ID="X" Caption="X" type="Double" DefaultValue="10"/>
+					<SCType ID="Y" Caption="Y" type="Double" DefaultValue="10"/>
+				</SCType>
+				<SCType ID="Width" Caption="Width" type="Double" DefaultValue="90" Visible="[Pattern]=[Pattern.Rect]"/>
+				<SCType ID="Height" Caption="Height" type="Double" DefaultValue="90" Visible="[Pattern]=[Pattern.Rect]"/>
+			</SCType>
+			<SCType ID="CircParams" Caption="Circle" type="ComplexType" Transparent="True">
+				<SCType ID="CenterPoint" Caption="Center point" type="ComplexType" Visible="[Pattern]=[Pattern.Circle]">
+					<SCType ID="X" Caption="X" type="Double" DefaultValue="50"/>
+					<SCType ID="Y" Caption="Y" type="Double" DefaultValue="50"/>
+				</SCType>
+				<SCType ID="Diameter" Caption="Diameter" type="Double" DefaultValue="45" Visible="[Pattern]=[Pattern.Circle]"/>
+			</SCType>
+			<SCType ID="ZLayers" Caption="Z layers" type="ComplexType">
+				<SCType ID="Count" Caption="Count" type="Integer" DefaultValue="10"/>
+				<SCType ID="ZStart" Caption="Z start" type="Double" DefaultValue="100"/>
+				<SCType ID="ZStep" Caption="Z step" type="Double" DefaultValue="-10"/>
+			</SCType>
+		</SCType>
+	</SCType>
+</SCCollection>

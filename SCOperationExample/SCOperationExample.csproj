@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <NoWarn>CS8603</NoWarn>
+    <OutDir>bin/$(Configuration)</OutDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="$(SprutCAMDir)\SprutTechnology.STTypes.dll"/>
+    <Reference Include="$(SprutCAMDir)\SprutTechnology.STLibraryTypes.dll"/>
+    <Reference Include="$(SprutCAMDir)\SprutTechnology.STXMLPropTypes.dll"/>
+    <Reference Include="$(SprutCAMDir)\SprutTechnology.STMCDFormerTypes.dll"/>
+    <Reference Include="$(SprutCAMDir)\SprutTechnology.STCuttingToolTypes.dll"/>
+    <Reference Include="$(SprutCAMDir)\SprutTechnology.STOperationTypes.dll"/>
+  </ItemGroup>
+
+</Project>
