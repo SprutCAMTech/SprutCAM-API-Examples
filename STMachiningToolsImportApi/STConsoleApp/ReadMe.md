@@ -1,6 +1,6 @@
 # SprutCAM Machining tools import API
 
-An example of a SprutCAM 16 console application for creating cutting tools.
+An example of a SprutCAM 17 console application for creating cutting tools.
 
 For more information about SprutCAM cutting tools, visit:
 - [Machining tool features](https://kb.sprutcam.com/docs/SprutCAM/16/en/38.html)

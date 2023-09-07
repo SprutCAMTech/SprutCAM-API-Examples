@@ -9,7 +9,7 @@ namespace DIN4000ImportPlugin
         static void Main(string[] args)
         {
 
-            StartArgs startArgs = new StartArgs();
+            StartArgs startArgs = new();
             startArgs.Parse(args);
             startArgs.UnZipCsvFiles();
             if (startArgs.CsvFiles.Count > 0)
@@ -18,7 +18,7 @@ namespace DIN4000ImportPlugin
                 foreach (string csvFileName in startArgs.CsvFiles)
                     DIN4000CsvReader.ReadCsvFile(csvFileName, recs);
 
-                using (ToolFromCsvMaker toolMaker = new ToolFromCsvMaker(startArgs.SCInstallFolder))
+                using (ToolFromCsvMaker toolMaker = new(startArgs.SCInstallFolder))
                 {
                     toolMaker.ImportRecsToDB(recs, startArgs.ResultDBFile);
                     Console.WriteLine("Imported tools count: " + toolMaker.ImportedToolsCount);

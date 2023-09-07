@@ -15,7 +15,7 @@
                 "${workspaceFolder}\\in\\DIN4000_Tools1.zip",
                 "${workspaceFolder}\\in\\DIN4000_Tools2.zip",
                 "${workspaceFolder}\\out\\DIN4000ImportPlugin_result.db",
-                "SCInstallFolder:\"C:\\Program Files\\SprutCAM Tech\\SprutCAM X 16\""
+                "SCInstallFolder:\"C:\\Program Files\\SprutCAM Tech\\SprutCAM X 17\""
             ],
             "cwd": "${workspaceFolder}",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console

@@ -9,18 +9,18 @@
 
   <ItemGroup>
     <Reference Include="SprutTechnology.MachinigToolsImportTypes">
-      <HintPath>C:\Program Files\SprutCAM Tech\SprutCAM X 16\DotNet\SprutTechnology.MachinigToolsImportTypes.dll</HintPath>
+      <HintPath>C:\Program Files\SprutCAM Tech\SprutCAM X 17\Bin64\SprutTechnology.MachinigToolsImportTypes.dll</HintPath>
     </Reference>
     <Reference Include="STMachiningToolsImportHelper">
-      <HintPath>C:\Program Files\SprutCAM Tech\SprutCAM X 16\DotNet\STMachiningToolsImportHelper.dll</HintPath>
+      <HintPath>C:\Program Files\SprutCAM Tech\SprutCAM X 17\Bin64\STMachiningToolsImportHelper.dll</HintPath>
     </Reference>
     <Reference Include="SprutTechnology.STTypes">
-      <HintPath>C:\Program Files\SprutCAM Tech\SprutCAM X 16\DotNet\SprutTechnology.STTypes.dll</HintPath>
+      <HintPath>C:\Program Files\SprutCAM Tech\SprutCAM X 17\Bin64\SprutTechnology.STTypes.dll</HintPath>
     </Reference>
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="CsvHelper" Version="27.2.1" />
+    <PackageReference Include="CsvHelper" Version="30.0.1" />
   </ItemGroup>
 
 </Project>

@@ -15,7 +15,7 @@ namespace STConsoleApp
         private static IMTI_MachiningToolsImportLibrary LoadImporter() 
         {
             //Specify an existing path to the Bin64 folder according to your environment SprutCam
-            string assemblyPath = @"c:\Program Files\SprutCAM Tech\SprutCAM X 16\Bin64\" + MTIMachiningToolsImportHelper.DllName;
+            string assemblyPath = @"c:\Program Files\SprutCAM Tech\SprutCAM X 17\Bin64\" + MTIMachiningToolsImportHelper.DllName;
             return File.Exists(assemblyPath) ? MTIMachiningToolsImportHelper.CreateImporter(assemblyPath) : null;
         }
 
