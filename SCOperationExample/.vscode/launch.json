@@ -5,11 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": ".NET Core Launch (console)",
+            "name": "Launch SprutCAM",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${env:SprutCAMDir}/sc.exe",
+            "program": "D:/Sources/SprutCAM/SprutCAM18/SprutCAM40/EXE/Bin64/sc.exe",
+            // "program": "${env:SprutCAMDir}/sc.exe",
             "args": [],
             "cwd": "${workspaceFolder}",
             "console": "internalConsole",

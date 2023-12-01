@@ -1,11 +1,11 @@
 namespace OperationExample;
 
 using System;
-using SprutTechnology.STTypes;
+using SprutCAMTech.STTypes;
 using SprutCAMExternalOperations;
-using SprutTechnology.STOperationTypes;
-using SprutTechnology.STMCDFormerTypes;
-using SprutTechnology.STCuttingToolTypes;
+using SprutCAMTech.STOperationTypes;
+using SprutCAMTech.STMCDFormerTypes;
+using SprutCAMTech.STCuttingToolTypes;
 using System.Runtime.InteropServices;
 
 /// <summary> SprutCAM example of a custom operation class </summary>
@@ -36,19 +36,19 @@ public class SimpleToolPathGenerator : IST_Operation, IST_OperationSolver
 
     }
 
-    public void SaveToStream(SprutTechnology.STXMLPropTypes.IStream Stream) {
+    public void SaveToStream(SprutCAMTech.STXMLPropTypes.IStream Stream) {
 
     }
 
-    public void LoadFromStream(SprutTechnology.STXMLPropTypes.IStream Stream) {
+    public void LoadFromStream(SprutCAMTech.STXMLPropTypes.IStream Stream) {
 
     }
 
-    public void SaveToXML(SprutTechnology.STXMLPropTypes.IST_XMLPropPointer XMLProp) {
+    public void SaveToXML(SprutCAMTech.STXMLPropTypes.IST_XMLPropPointer XMLProp) {
 
     }
 
-    public void LoadFromXML(SprutTechnology.STXMLPropTypes.IST_XMLPropPointer XMLProp) {
+    public void LoadFromXML(SprutCAMTech.STXMLPropTypes.IST_XMLPropPointer XMLProp) {
 
     }
 

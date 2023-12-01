@@ -9,12 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="$(SprutCAMDir)\SprutTechnology.STTypes.dll"/>
-    <Reference Include="$(SprutCAMDir)\SprutTechnology.STLibraryTypes.dll"/>
-    <Reference Include="$(SprutCAMDir)\SprutTechnology.STXMLPropTypes.dll"/>
-    <Reference Include="$(SprutCAMDir)\SprutTechnology.STMCDFormerTypes.dll"/>
-    <Reference Include="$(SprutCAMDir)\SprutTechnology.STCuttingToolTypes.dll"/>
-    <Reference Include="$(SprutCAMDir)\SprutTechnology.STOperationTypes.dll"/>
+    <PackageReference Include="SprutCAMTech.STTypes.Net" Version="18.0.300-dev.2"/>
+    <PackageReference Include="SprutCAMTech.STLibraryTypes.Net" Version="18.0.101-dev.6"/>
+    <PackageReference Include="SprutCAMTech.STXMLPropTypes.Net" Version="18.0.200-dev.4"/>
+    <PackageReference Include="SprutCAMTech.STMCDFormerTypes.Net" Version="18.0.101-dev.6"/>
+    <PackageReference Include="SprutCAMTech.STCuttingToolTypes.Net" Version="18.0.101-dev.6"/>
+    <PackageReference Include="SprutCAMTech.STOperationTypes.Net" Version="18.0.200-dev.4"/>
   </ItemGroup>
 
 </Project>

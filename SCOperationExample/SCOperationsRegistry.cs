@@ -3,7 +3,7 @@ namespace SprutCAMExternalOperations;
 
 using System;
 using System.Reflection;
-using SprutTechnology.STLibraryTypes;
+using SprutCAMTech.STLibraryTypes;
 
 /// <summary>
 /// SprutCAM operation class attribute.
