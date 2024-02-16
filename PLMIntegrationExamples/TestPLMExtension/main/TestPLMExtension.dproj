@@ -90,10 +90,9 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="TestPLMInterface.pas"/>
-        <DCCReference Include="..\SprutCAM\SprutCAM40\EXE\Win64\dcu\SprutCAMTech.STPLMInterface\IDL.SprutCAMTech.STPLMInterface.pas"/>
-        <DCCReference Include="TestPLMParameters.pas"/>
-        <DCCReference Include="TestPLMItems.pas"/>
+        <DCCReference Include="src\TestPLMInterface.pas"/>
+        <DCCReference Include="src\TestPLMItems.pas"/>
+        <DCCReference Include="src\TestPLMParameters.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
