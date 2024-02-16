@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <!-- <UseWPF>true</UseWPF> -->
+    <ImplicitUsings>true</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <NoWarn>CS8603</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="$(SprutCAMDir)\SprutTechnology.STTypes.dll"/>
+    <Reference Include="$(SprutCAMDir)\SprutTechnology.STLibraryTypes.dll"/>
+  </ItemGroup>
+  
+
+</Project>
