@@ -1,10 +1,10 @@
 ﻿using System;
 using System.IO;
-using SprutTechnology.MachinigToolsImportTypes;
-using SprutTechnology.STMachiningToolsImportHelper;
-using SprutTechnology.STTypes;
-using THDT = SprutTechnology.MachinigToolsImportTypes.TMTI_TurnToolHolderDimensionTypes;
-using TIDT = SprutTechnology.MachinigToolsImportTypes.TMTI_TurnToolInsertDimensionTypes;
+using SprutCAMTech.MachinigToolsImportTypes;
+using SprutCAMTech.STMachiningToolsImportHelper;
+using SprutCAMTech.STTypes;
+using THDT = SprutCAMTech.MachinigToolsImportTypes.TMTI_TurnToolHolderDimensionTypes;
+using TIDT = SprutCAMTech.MachinigToolsImportTypes.TMTI_TurnToolInsertDimensionTypes;
 
 namespace STConsoleApp
 {
